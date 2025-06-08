@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_curriculum_sections",
+  "info": {
+    "displayName": "curriculum_section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "lessons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.lesson"
+    }
+  }
+}

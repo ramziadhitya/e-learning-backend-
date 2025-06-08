@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lessons",
+  "info": {
+    "singularName": "lesson",
+    "pluralName": "lessons",
+    "displayName": "lesson"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "lesson": {
+      "displayName": "lesson",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.lesson"
+    }
+  }
+}

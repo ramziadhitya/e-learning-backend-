@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shared_lessons",
+  "info": {
+    "displayName": "lesson",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "video": {
+      "allowedTypes": [
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "duration": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "details",
+  "info": {
+    "singularName": "detail",
+    "pluralName": "details",
+    "displayName": "Detail"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "studentsCount": {
+      "type": "biginteger"
+    },
+    "skillLevel": {
+      "type": "enumeration",
+      "enum": [
+        "Basic",
+        "Intermediate",
+        "Advanced",
+        "All Level"
+      ]
+    },
+    "language": {
+      "type": "string"
+    },
+    "certification": {
+      "type": "boolean"
+    },
+    "deadline": {
+      "type": "datetime"
+    },
+    "instructor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
